@@ -1,3 +1,4 @@
+import 'package:diaryapp/view/main_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,33 +19,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       home: const MainPage(),
-    );
-  }
-}
-
-class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey.shade100,
-        toolbarHeight: 100,
-        elevation: 4,
-        title: Row(
-          children: [
-            Text(
-              'my',
-              style: TextStyle(fontSize: 39, color: Colors.blueGrey.shade400),
-            ),
-            const Text(
-              'Diary',
-              style: TextStyle(fontSize: 39, color: Colors.green),
-            )
-          ],
-        ),
-      ),
     );
   }
 }
